@@ -1,0 +1,373 @@
+db.Route.insertMany(
+[{
+    "routeId": 11,
+    "routeName": "Alum Chine - CastlePoint",
+    "routeLength": 40,  
+    "busstop":[
+        {
+            "busStopId": 101,
+            "busStopName": "Alum Chine",
+            "type": "Hail and Ride",
+            "coordinates": {
+                "latitude": "41.4823,2.3444",
+                "longitude": "45.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11ED",
+                "county": "Bournemouth"
+            }
+        },{
+            "busStopId": 102,
+            "busStopName": "Bournemouth Rail Station",
+            "type": "Simple Signed",
+            "coordinates": {
+                "latitude": "44.3646,5.43664",
+                "longitude": "49.3646,15.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11EY",
+                "county": "Bournemouth"
+            }
+        }, {
+            "busStopId": 103,
+            "busStopName": "Craneborne Road",
+            "type": "Box Marked",
+            "coordinates": {
+                "latitude": "12.4344,7.3434",
+                "longitude": "16.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11DE",
+                "county": "Bournemouth"
+            }
+        }, {
+            "busStopId": 104,
+            "busStopName": "Talbot Campus",
+            "type": "Accessible",
+            "coordinates": {
+                "latitude": "7.3434,11.5656",
+                "longitude": "11.3646,18.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11AA",
+                "county": "Dorset"
+            }
+        }, {
+            "busStopId": 105,
+            "busStopName": "Lansdowne",
+            "type": "Laybys",
+            "coordinates": {
+                "latitude":  "6.34343,32.4324",
+                "longitude": "10.3646,38.43664"
+            },               
+            "stopAddress": {
+                "postCode":"BH11EX",
+                "county": "Dorset"
+            }
+        }, {
+            "busStopId": 106,
+            "busStopName": "CastlePoint",
+            "type": "Laybys",
+            "coordinates": {
+                "latitude":  "96.34343,32.4324",
+                "longitude": "110.3646,38.43664"
+            },               
+            "stopAddress": {
+                "postCode":"BH16EX",
+                "county": "Dorset"
+            }
+        }
+    ]
+}, {
+    "routeId": 12,
+    "routeName": "RB Hospital - Bournemouth",
+    "routeLength": 10,
+    "busstop":[
+        {
+            "busStopId": 201,
+            "busStopName": "RB Hospital",
+            "type": "Hail and Ride",
+            "coordinates": {
+                "latitude": "31.4823,2.3444",
+                "longitude": "35.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11ED",
+                "county": "Bournemouth"
+            }
+        },{
+            "busStopId": 102,
+            "busStopName": "Bournemouth Rail Station",
+            "type": "Simple Signed",
+            "coordinates": {
+                "latitude": "44.3646,5.43664",
+                "longitude": "49.3646,15.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11EY",
+                "county": "Bournemouth"
+            }
+        },{
+            "busStopId": 202,
+            "busStopName": "Throop",
+            "type": "Simple Signed",
+            "coordinates": {
+                "latitude": "34.3646,5.43664",
+                "longitude": "39.3646,15.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11EY",
+                "county": "Bournemouth"
+            }
+        }, {
+            "busStopId": 106,
+            "busStopName": "CastlePoint",
+            "type": "Box Marked",
+            "coordinates": {
+                "latitude": "22.4344,7.3434",
+                "longitude": "26.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11DE",
+                "county": "Bournemouth"
+            }
+        }, {
+            "busStopId": 107,
+            "busStopName": "Boscombe",
+            "type": "Accessible",
+            "coordinates": {
+                "latitude": "97.3434,11.5656",
+                "longitude": "111.3646,18.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11AA",
+                "county": "Dorset"
+            }
+        }, {
+            "busStopId": 108,
+            "busStopName": "Pokesdown",
+            "type": "Laybys",
+            "coordinates": {
+                "latitude":  "66.34343,32.4324",
+                "longitude": "70.3646,38.43664"
+            },          
+            "stopAddress": {
+                "postCode":"BH11EX",
+                "county": "Dorset"
+            }
+        }
+    ]       
+},{
+    "routeId": 13,
+    "routeName": "Boscombe - Kinson",
+    "routeLength": 12,
+    "busstop":[
+        {
+            "busStopId": 301,
+            "busStopName": "West Howe",
+            "type": "Hail and Ride",
+            "coordinates": {
+                "latitude": "03.4823,2.3444",
+                "longitude": "12.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11ED",
+                "county": "Bournemouth"
+            }
+        },{
+            "busStopId": 302,
+            "busStopName": "Kinson",
+            "type": "Simple Signed",
+            "coordinates": {
+                "latitude": "43.3646,5.43664",
+                "longitude": "99.3646,15.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11EY",
+                "county": "Bournemouth"
+            }
+        }, {
+            "busStopId": 303,
+            "busStopName": "East Howe",
+            "type": "Box Marked",
+            "coordinates": {
+                "latitude": "52.4344,7.3434",
+                "longitude": "56.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11DE",
+                "county": "Bournemouth"
+            }
+        }, {
+            "busStopId": 304,
+            "busStopName": "Moordown",
+            "type": "Accessible",
+            "coordinates": {
+                "latitude": "97.3434,11.5656",
+                "longitude": "111.3646,18.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11AB",
+                "county": "Dorset"
+            }
+        }, {
+            "busStopId": 305,
+            "busStopName": "Ensbury Park",
+            "type": "Laybys",
+            "coordinates": {
+                "latitude":  "66.34343,32.4324",
+                "longitude": "70.3646,38.43664"
+            },          
+            "stopAddress": {
+                "postCode":"BH11EX",
+                "county": "Dorset"
+            }
+        }, {
+            "busStopId": 306,
+            "busStopName": "Boscombe",
+            "type": "Accessible",
+            "coordinates": {
+                "latitude": "197.3434,11.5656",
+                "longitude": "211.3646,18.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH12AB",
+                "county": "Dorset"
+            }
+        }
+    ]       
+}, {
+    "routeId": 14,
+    "routeName": "Westbourne - CastlePoint",
+    "routeLength": 8,
+    "busstop":[
+        {
+            "busStopId": 401,
+            "busStopName": "Westbourne",
+            "type": "Hail and Ride",
+            "coordinates": {
+                "latitude": "02.4823,2.3444",
+                "longitude": "15.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11ED",
+                "county": "Bournemouth"
+            }
+        },{
+            "busStopId": 402,
+            "busStopName": "Winton",
+            "type": "Simple Signed",
+            "coordinates": {
+                "latitude": "54.3646,5.43664",
+                "longitude": "39.3646,15.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11EY",
+                "county": "Bournemouth"
+            }
+        }, {
+            "busStopId": 403,
+            "busStopName": "Iford",
+            "type": "Box Marked",
+            "coordinates": {
+                "latitude": "22.4344,7.3434",
+                "longitude": "26.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11DE",
+                "county": "Bournemouth"
+            }
+        }, {
+            "busStopId": 108,
+            "busStopName": "Pokesdown",
+            "type": "Accessible",
+            "coordinates": {
+                "latitude": "97.3434,11.5656",
+                "longitude": "111.3646,18.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11AA",
+                "county": "Dorset"
+            }
+        }, {
+            "busStopId": 106,
+            "busStopName": "CastlePoint",
+            "type": "Box Marked",
+            "coordinates": {
+                "latitude": "22.4344,7.3434",
+                "longitude": "26.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"BH11DE",
+                "county": "Bournemouth"
+            }
+        }, {
+            "busStopId": 404,
+            "busStopName": "Queens Park",
+            "type": "Laybys",
+            "coordinates": {
+                "latitude":  "66.34343,32.4324",
+                "longitude": "70.3646,38.43664"
+            },          
+            "stopAddress": {
+                "postCode":"BH11EX",
+                "county": "Dorset"
+            }
+        }
+    ]       
+}, {
+    "routeId": 15,
+    "routeName": "Railway Station - NorthUmberland Avenue",
+    "routeLength": 12,
+    "busstop":[
+        {
+            "busStopId": 901,
+            "busStopName": "Railway Station",
+            "type": "Hail and Ride",
+            "coordinates": {
+                "latitude": "03.4823,2.3444",
+                "longitude": "12.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"RG11ED",
+                "county": "BERKSHIRE"
+            }
+        },{
+            "busStopId": 902,
+            "busStopName": "NorthUmberland Avenue",
+            "type": "Simple Signed",
+            "coordinates": {
+                "latitude": "43.3646,5.43664",
+                "longitude": "99.3646,15.43664"
+            },
+            "stopAddress": {
+                "postCode":"RG11EY",
+                "county": "BERKSHIRE"
+            }
+        }, {
+            "busStopId": 903,
+            "busStopName": "Forbury Gardens",
+            "type": "Box Marked",
+            "coordinates": {
+                "latitude": "52.4344,7.3434",
+                "longitude": "56.3646,12.43664"
+            },
+            "stopAddress": {
+                "postCode":"RG11DE",
+                "county": "BERKSHIRE"
+            }
+        }, {
+            "busStopId": 904,
+            "busStopName": "Temple",
+            "type": "Accessible",
+            "coordinates": {
+                "latitude": "97.3434,11.5656",
+                "longitude": "111.3646,18.43664"
+            },
+            "stopAddress": {
+                "postCode":"RG11AB",
+                "county": "BERKSHIRE"
+            }
+        }
+    ]
+}]);

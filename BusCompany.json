@@ -1,0 +1,181 @@
+db.busCompany.insertMany(
+[{
+    "busCompId": 1001,
+    "busCompMailId": "thekey@unibuses.co.uk",
+    "busCompName": "Unibus",
+    "busCompPhone": 01202678100,
+    "busCompAddr": {
+        "address1": "Bournemouth Bus Station",
+        "address2": "King Land Road",
+        "city": "Bournemouth",
+        "postCode": "BH151TP", 
+        "county": "Dorset"
+    },
+    "Bus": [{
+        "busId": 501,
+        "busrouteId": 11,
+        "busrouteName": "Alum Chine - CastlePoint",
+        "busNo": "u1",
+        "sourceBusstop" : "Alum Chine",
+        "destinationBusStop" : "CastlePoint",
+        "runningStatus" : "false",
+        "mileage": "60/l",
+        "year": "2019",
+        "serviceStartDate" :ISODate("2020-10-04T10:50:42.389Z"),
+        "serviceEndDate":ISODate("2022-12-10T10:50:42.389Z"),
+        "model": "Single Deck",
+        "ticketStatus":"valid"
+    },{
+        "busId": 502,
+        "busrouteId": 12,
+        "busrouteName": "RB Hospital - Bournemouth",
+        "busNo": "u2",
+        "sourceBusstop" : "RB Hospital",
+        "destinationBusStop" : "Bournemouth",
+        "runningStatus" : "true",
+        "mileage": "32/l",
+        "year": "2006",
+        "serviceStartDate" :ISODate("2020-12-01T10:50:42.389Z"),
+        "serviceEndDate":ISODate("2025-10-01T10:50:42.389Z"),
+        "model": "Double Decker",
+        "ticketStatus":"valid"
+    }]   
+}, {
+    "busCompId": 1002,
+    "busCompMailId": "Poole@buses.co.uk",
+    "busCompName": "PooleBus",
+    "busCompPhone": 01202678100,
+    "busCompAddr": {
+        "address1": "Poole Bus Station",
+        "address2": "Queen Land Road",
+        "city": "Poole",
+        "postCode": "BH151TP", 
+        "county": "Dorset"
+    },  
+    "Bus": [{
+        "busId": 503,
+        "busrouteId": 12,
+        "busrouteName": "Boscombe - Kinson",
+        "busNo": "570",
+        "sourceBusstop" : "Boscombe",
+        "destinationBusStop" : "Kinson",
+        "runningStatus" : "true",
+        "mileage": "60/l",                   
+        "year": "2018",
+        "serviceStartDate" :ISODate("2019-10-04T10:50:42.389Z"),
+        "serviceEndDate":ISODate("2024-10-04T10:50:42.389Z"),
+        "model": "Single Deck",
+        "ticketStatus":"valid"
+    },{
+        "busId": 504,
+        "busrouteId": 14,
+        "busrouteName": "Westbourne - CastlePointt",
+        "busNo": "119",
+        "sourceBusstop" : "Westbourne",
+        "destinationBusStop" : "CastlePoint",
+        "runningStatus" : "true",
+        "mileage": "32/l",
+        "year": "2016",
+        "serviceStartDate" :ISODate("2018-10-04T10:50:42.389Z"),
+        "serviceEndDate":ISODate("2022-10-04T10:50:42.389Z"),
+        "model": "Double Decker",
+        "ticketStatus":"valid"
+    },{
+        "busId": 505,
+        "busrouteId": 13,
+        "busrouteName": "Boscombe - Kinson",
+        "busNo": "56",
+        "sourceBusstop" : "Boscombe",
+        "destinationBusStop" : "Kinson",
+        "runningStatus" : "true",
+        "mileage": "77/l",
+        "year": "2019",
+        "serviceStartDate" :ISODate("2008-08-04T10:50:42.389Z"),
+        "serviceEndDate":ISODate("2028-08-04T10:50:42.389Z"),
+        "model": "Double Decker",
+        "ticketStatus":"valid"
+    }]
+},{
+    "busCompId": 1003,
+    "busCompMailId": "reading@buses.co.uk",
+    "busCompName": "Reading",
+    "busCompPhone": 01202678100,
+    "busCompAddr": {
+        "address1": "Reading Bus Station",
+        "address2": "King Lane Road",
+        "city": "Reading",
+        "postCode": "RG151TP", 
+        "county": "Berkshire"
+    },
+    "Bus": [{
+        "busId": 601,
+        "busrouteId": 15,
+        "busrouteName": "Railway Station - NorthUmberland Avenue",
+        "busNo": "r1",
+        "sourceBusstop" : "Railway Station",
+        "destinationBusStop" : "NorthUmberland Avenue",
+        "runningStatus" : "false",
+        "mileage": "60/l",
+        "year": "2017",
+        "serviceStartDate" :ISODate("2020-10-04T10:50:42.389Z"),
+        "serviceEndDate":ISODate("2022-12-10T10:50:42.389Z"),
+        "model": "Single Deck",
+        "ticketStatus":"valid"
+    },{
+        "busId": 602,
+        "busrouteId": 15,
+        "busrouteName": "Railway Station - NorthUmberland Avenue",
+        "busNo": "r2",
+        "sourceBusstop" : "Railway Station",
+        "destinationBusStop" : "NorthUmberland Avenue",
+        "runningStatus" : "true",
+        "mileage": "32/l",
+        "year": "2016",
+        "serviceStartDate" :ISODate("2020-12-01T10:50:42.389Z"),
+        "serviceEndDate":ISODate("2025-10-01T10:50:42.389Z"),
+        "model": "Double Decker",
+        "ticketStatus":"valid"
+    }]   
+},{
+    "busCompId": 1004,
+    "busCompMailId": "dorset@dorsetbuses.co.uk",
+    "busCompName": "Dorsetbus",
+    "busCompPhone": 01202678100,
+    "busCompAddr": {
+        "address1": "Poole Rly Station",
+        "address2": "Cranborne Road",
+        "city": "Poole",
+        "postCode": "BH761TP", 
+        "county": "Dorset"
+    },
+    "Bus": [{
+        "busId": 603,
+        "busrouteId": 13,
+        "busrouteName": "Boscombe - Kinson",
+        "busNo": "d1",
+        "sourceBusstop" : "Boscombe",
+        "destinationBusStop" : "Kinson",
+        "runningStatus" : "false",
+        "mileage": "60/l",
+        "year": "2020",
+        "serviceStartDate" :ISODate("2020-10-04T10:50:42.389Z"),
+        "serviceEndDate":ISODate("2022-12-10T10:50:42.389Z"),
+        "model": "Single Deck",
+        "ticketStatus":"valid"
+    },{
+        "busId": 604,
+        "busrouteId": 14,
+        "busrouteName": "Westbourne - CastlePoint",
+        "busNo": "d2",
+        "sourceBusstop" : "Westbourne",
+        "destinationBusStop" : "CastlePoint",
+        "runningStatus" : "true",
+        "mileage": "32/l",
+        "year": "2006",
+        "serviceStartDate" :ISODate("2020-12-01T10:50:42.389Z"),
+        "serviceEndDate":ISODate("2025-10-01T10:50:42.389Z"),
+        "model": "Double Decker",
+        "ticketStatus":"valid"
+    }]   
+}]);
+

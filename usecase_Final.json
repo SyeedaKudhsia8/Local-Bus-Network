@@ -1,0 +1,132 @@
+Use case1
+-----------
+db.busCompany.aggregate([
+    {
+           "$match": {"busCompId": 1002 }
+  
+       },
+    {$unwind: "$Bus"},
+    {$match:{"Bus.runningStatus":"true"}},
+    {$group: {_id:0, NumberOfBusesInService:{$sum:1}}}
+  ])
+
+
+  Use case2
+  -----------
+
+
+  db.Route.aggregate([
+    {
+        "$match" : {
+            "busstop": {
+                "$elemMatch" : {                                     
+                    "busStopName" : "CastlePoint"
+                    }
+                }
+            }
+        } ,  {
+        "$project" : {
+            "routeId" : 1.0, 
+            "routeName" : 1.0, 
+            "busstop" : {
+               "$filter" : {
+                  "input" : "$busstop",
+                  "as" : "busstop",
+                  "cond" : {
+                     "$eq" : [ "$$busstop.busStopName", "CastlePoint" ]
+                      
+                    }
+                }
+            }
+        }
+    }
+]).pretty();
+
+Use case3
+-------------
+
+db.Route.aggregate([
+{
+    $lookup: {
+      from: "busCompany",
+      localField: "busrouteId",
+      foreignField: "routeId",
+      as: "busData"
+    }
+  }, 
+  {
+    $unwind: {
+      path: "$busData",
+      preserveNullAndEmptyArrays: true
+    }
+  }, {
+  $unwind: {
+    path: "$busData.Bus",
+    preserveNullAndEmptyArrays: true
+  }
+},{
+    $match: {
+    "$and":[
+        {"routeId": 12 },
+        {"busData.Bus.busrouteId": 12}
+        ]
+    },
+  }, {
+    "$project" : {
+        "routeId" : 1.0, 
+        "routeName" : 1.0, 
+        "busData.busCompId" : 1.0,
+        "busData.Bus.busId" : 1.0, 
+        "busData.Bus.busrouteId" : 1.0,
+        "busData.Bus.busrouteName" : 1.0,
+        "busData.Bus.sourceBusstop" : 1.0,
+        "busData.Bus.destinationBusStop" : 1.0,
+        "busData.Bus.runningStatus" : 1.0
+    }
+}]).pretty()
+
+
+Use case4
+-----------
+
+db.UnifiedTicketApp.aggregate([
+    {$unwind: "$trips"},
+         {
+            $match: {
+            "$and":[
+                {"trips.startBusStop":"Lansdowne"},
+                {"trips.endBusStop":"CastlePoint"}
+                ]
+            }
+        }, {
+            $count: "NoOfPassengersTravelled"
+            }
+
+]).pretty()
+
+Use case5
+-----------
+
+db.UnifiedTicketApp.aggregate(
+{"$match":{"passengerId": 51 }}).pretty()
+
+db.UnifiedTicketApp.update(
+    {
+         "passengerId": 51,
+         $and : [
+             {"unifiedTicketApp.wallet.noOfTickets": {$gt :0}},
+             {"unifiedTicketApp.wallet.status" : "Active"},
+             {"tripCount": {$gt:0}}]
+             
+     },
+     {
+        $inc: { "unifiedTicketApp.wallet.noOfTickets" : -1, "tripCount" :1 },
+        $set: {
+             "unifiedTicketApp.wallet.status" : "Active"
+             }
+     },
+     {
+        upsert : true
+     }
+)
+

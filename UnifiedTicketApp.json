@@ -1,0 +1,266 @@
+db.UnifiedTicketApp.insertMany(
+[{
+	"passengerId": 50,
+	"name": "Anna",
+    "mailId": "annamalai@gmail.com",
+    "phoneNo": 7421143356,
+    "discountStatus": "true",
+    "tripCount":10 ,
+    "busNo" : "u1",   
+    "seatNo" : 12,
+    "ticketId": 101,
+    "ticketType": "Dayrider",
+        "trips": {
+            "ticketStatus": "valid",
+            "tariff": 8.00,
+            "time": "11:44:23 BST",
+            "date": ISODate("2020-05-10T10:50:42.389Z"),
+            "startBusStop": "Lansdowne",
+            "endBusStop": "CastlePoint"
+            },
+    "unifiedTicketApp": {
+        "busCompId": 1001,                  
+        "wallet": {
+            "noOfTickets": 10,
+            "status": "Active",
+        }
+    }
+},{
+    "passengerId": 51,
+    "name": "Catherine",
+    "mailId": "catherine@hotmail.com",
+    "phoneNo": 8634213902,
+    "discountStatus": "true",
+    "tripCount": 6,
+    "busNo" : "570",
+    "seatNo" : 08,
+    "ticketId": 102,
+    "ticketType": "Group Dayrider",
+        "trips": {
+            "ticketStatus": "invalid",
+            "tariff": 24.00,
+            "time": "03:10:00 BST",
+            "date": ISODate("2020-12-10T10:50:42.389Z"),
+            "startBusStop": "Boscombe",
+            "endBusStop": "Kinson"
+        },
+        "unifiedTicketApp": {
+            "busCompId": 1002,                  
+            "wallet": {
+                "noOfTickets": 6,
+                "status": "Active",
+            }
+        }
+    }, {
+    "passengerId": 52,
+    "name": "Prasanna",
+    "mailId": "prasi@hotmail.com",
+    "phoneNo": 7845123678,
+    "discountStatus": "true",
+    "tripCount": 2,
+    "busNo" : "u2",
+    "seatNo" : 08,
+    "ticketId": 103,
+    "ticketType": "Group Dayrider",
+        "trips": {
+            "ticketStatus": "valid",
+            "tariff": 24.00,
+            "time": "09:50:00 BST",
+            "date": ISODate("2020-12-10T10:50:42.389Z"),
+            "startBusStop": "Throop",
+            "endBusStop": "Castlepoint"
+        },
+        "unifiedTicketApp": {
+            "busCompId": 1001,                  
+            "wallet": {
+                "noOfTickets": 6,
+                "status": "Active",
+            }
+        }
+    },{
+    "passengerId": 53,
+    "name": "Raji",
+    "mailId": "raji@yahoo.com",
+    "phoneNo": 7845123699,
+    "discountStatus": "true",
+    "tripCount": 2,
+    "busNo" : "56",
+    "seatNo" : 18,
+    "ticketId": 104,
+    "ticketType": "student Dayrider",
+        "trips": {
+            "ticketStatus": "Valid",
+            "tariff": 54.00,
+            "time": "04:10:00 BST",
+            "date": ISODate("2020-12-10T10:50:42.389Z"),
+            "startBusStop": "West Howe",
+            "endBusStop": "East Howe"
+        },
+        "unifiedTicketApp": {
+            "busCompId": 1002,                  
+            "wallet": {
+                "noOfTickets": 6,
+                "status": "Active",
+            }
+        }
+    }, {
+    "passengerId": 54,
+    "name": "Annachi",
+    "mailId": "annachi@gmail.com",
+    "phoneNo": 7421149956,
+    "discountStatus": "true",
+    "tripCount":10 ,
+    "busNo" : "119",   
+    "seatNo" : 12,
+    "ticketId": 201,
+    "ticketType": "Group Dayrider",
+        "trips": {
+            "ticketStatus": "valid",
+            "tariff": 8.00,
+            "time": "11:44:23 BST",
+            "date": ISODate("2020-05-10T10:50:42.389Z"),
+            "startBusStop": "Westbourne",
+            "endBusStop": "Pokesdown"
+            },
+    "unifiedTicketApp": {
+        "busCompId": 1002,                  
+        "wallet": {
+            "noOfTickets": 10,
+            "status": "Active",
+        }
+    }
+    },{
+    "passengerId": 55,
+    "name": "Sofia",
+    "mailId": "sofia@hotmail.com",
+    "phoneNo": 8638213902,
+    "discountStatus": "true",
+    "tripCount": 6,
+    "busNo" : "d1",
+    "seatNo" : 08,
+    "ticketId": 202,
+    "ticketType": "Group Dayrider",
+        "trips": {
+            "ticketStatus": "invalid",
+            "tariff": 24.00,
+            "time": "03:10:00 BST",
+            "date": ISODate("2020-12-10T10:50:42.389Z"),
+            "startBusStop": "Winton",
+            "endBusStop": "Queens Park"
+        },
+        "unifiedTicketApp": {
+            "busCompId": 1004,                  
+            "wallet": {
+                "noOfTickets": 6,
+                "status": "Active",
+            }
+        }
+    }, {
+    "passengerId": 56,
+    "name": "Ishu Babu",
+    "mailId": "Ishu@hotmail.com",
+    "phoneNo": 7845923678,
+    "discountStatus": "true",
+    "tripCount": 2,
+    "busNo" : "d2",
+    "seatNo" : 22,
+    "ticketId": 203,
+    "ticketType": "Group Dayrider",
+        "trips": {
+            "ticketStatus": "invalid",
+            "tariff": 24.00,
+            "time": "06:30:00 BST",
+            "date": ISODate("2020-12-10T10:50:42.389Z"),
+            "startBusStop": "Ensbury Park",
+            "endBusStop": "Kinson"
+        },
+        "unifiedTicketApp": {
+            "busCompId": 1004,                  
+            "wallet": {
+                "noOfTickets": 6,
+                "status": "Active",
+            }
+        }
+    },{
+    "passengerId": 57,
+    "name": "Baby",
+    "mailId": "baby@yahoo.com",
+    "phoneNo": 7877123699,
+    "discountStatus": "true",
+    "tripCount": 2,
+    "busNo" : "r1",
+    "seatNo" : 18,
+    "ticketId": 204,
+    "ticketType": "student Dayrider",
+        "trips": {
+            "ticketStatus": "Valid",
+            "tariff": 54.00,
+            "time": "07:10:00 BST",
+            "date": ISODate("2020-01-10T10:50:42.389Z"),
+            "startBusStop": "Railway Station",
+            "endBusStop": "NorthUmberland Avenue"
+        },
+        "unifiedTicketApp": {
+            "busCompId": 1003,                  
+            "wallet": {
+                "noOfTickets": 6,
+                "status": "Active",
+            }
+        }
+    } ,{
+        "passengerId": 58,
+        "name": "Neha",
+        "mailId": "neha@gmail.com",
+        "phoneNo": 7428843356,
+        "discountStatus": "true",
+        "tripCount":10 ,
+        "busNo" : "u1",   
+        "seatNo" : 15,
+        "ticketId": 902,
+        "ticketType": "Dayrider",
+            "trips": {
+                "ticketStatus": "valid",
+                "tariff": 8.00,
+                "time": "11:44:23 BST",
+                "date": ISODate("2020-05-10T10:50:42.389Z"),
+                "startBusStop": "Lansdowne",
+                "endBusStop": "CastlePoint"
+                },
+        "unifiedTicketApp": {
+            "busCompId": 1001,                  
+            "wallet": {
+                "noOfTickets": 10,
+                "status": "Active",
+            }
+        }
+    },{
+        "passengerId": 59,
+        "name": "Tanu",
+        "mailId": "tanu@gmail.com",
+        "phoneNo": 7421643356,
+        "discountStatus": "true",
+        "tripCount":10 ,
+        "busNo" : "u1",   
+        "seatNo" : 2,
+        "ticketId": 221,
+        "ticketType": "Dayrider",
+            "trips": {
+                "ticketStatus": "valid",
+                "tariff": 8.00,
+                "time": "11:44:23 BST",
+                "date": ISODate("2020-05-10T10:50:42.389Z"),
+                "startBusStop": "Lansdowne",
+                "endBusStop": "CastlePoint"
+                },
+        "unifiedTicketApp": {
+            "busCompId": 1001,                  
+            "wallet": {
+                "noOfTickets": 10,
+                "status": "Active",
+            }
+        }
+    } 
+]);
+
+
+ 
